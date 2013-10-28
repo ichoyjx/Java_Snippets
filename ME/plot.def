@@ -1,0 +1,13 @@
+#set title "bi-variate Gaussian Distribution"
+set xlabel "X-axis"
+set ylabel "Y-axis"
+set grid
+
+#set term postscript eps color solid linewidth 2 "Times-Roman,25"
+#set output "bi-variate.eps"
+
+set term png
+set output "bi-variate.png"
+
+plot 'first.data' u 1:2:3 with circles title 'first',  'second.data' u 1:2:3 with circles title 'second'
+replot
