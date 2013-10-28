@@ -1,0 +1,10 @@
+set title "Class plotting"
+set xlabel "X-axis"
+set ylabel "Y-axis"
+set grid
+
+set terminal png
+set output "class.png"
+
+plot 'class1.data' u 1:2:3 with circles title 'positive',  'class2.data' u 1:2:3 with circles title 'negative'
+replot
